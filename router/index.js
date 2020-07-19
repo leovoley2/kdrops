@@ -44,7 +44,7 @@ module.exports = function() {
     });
 
     router.get('/busqueda', async (req, res) => {
-        const { codigo } = req.query
+        const { codigo } = req.query;
 
 
 
@@ -53,7 +53,7 @@ module.exports = function() {
                 codigo : { [Op.iLike] :  '%' + codigo + '%' }
             
             }
-        })
+        });
          // pasar los resultados a la vista
         res.render('busqueda', {
         nombrePagina : 'Resultados Búsqueda',
@@ -84,7 +84,7 @@ module.exports = function() {
         }
     });
     const info = await transporte.sendMail({
-            from : 'Voleywebcamp <voleycamp@voleywebcamp.com>',
+            from : 'Voleywebcamp <leovoley2@gmail.com.com>',
             to : opciones.usuario.email,
             subject: opciones.subject,
             html
