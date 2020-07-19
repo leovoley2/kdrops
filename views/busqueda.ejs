@@ -3,12 +3,12 @@
         <div class="row">
             <div class="col">
                 <h1 class="text-center titulo my-5"><%= nombrePagina %></h1>
-                <% if (producto.length > 0 ) { %>
+                <% if (busCodigo.length > 0 ) { %>
                 <div class="col">
-                    <% producto.forEach(codigo => { %>
+                    <% busCodigo.forEach(codigo => { %>
                     <div class="alert alert-dismissible alert-success">
                         <button type="button" class="close" data-dismiss="alert">&times;</button>
-                        <strong>Buenas Noticias!</strong> el codigo del producto que ha sido ingresado es 100% original. <a href="#" class="alert-link">volver a pagina anterior</a>.
+                        <strong>Buenas Noticias!</strong> el codigo del producto que ha sido ingresado es 100% original.
                     </div>
                     <% }) %>
 
@@ -19,10 +19,23 @@
                     <button type="button" class="close" data-dismiss="alert">&times;</button>
                     <h4 class="alert-heading">Peligro!</h4>
                     <p class="mb-0">El producto que ha sido consultado no es original.
-                         <a href="/" class="alert-link">Vuelva a consultar</a>.</p>
+                         
                 </div>
                 <% } %>
             </div>
         </div>
+    </div>
+</section>
+<section class="buscar mb-4">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center text-white  mt-5">Consulta otro producto</h1>
+            <form class="form-inline  mb-5" method="GET" action="/busqueda">
+                       <div class="form-group"> 
+                           <input class="form-control-lg" type="text" name="codigo" id="codigo"     placeholder="Buscar Codigo" required>
+                       </div>
+                       <button class="btn btn-primary ml-2" type="submit">Buscar</button>
+           </form>
+       </div>
     </div>
 </section>

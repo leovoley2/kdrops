@@ -52,7 +52,12 @@ module.exports = function() {
             
             }
         })
-         console.log('codigo encontrado con exito', busCodigo);
+         // pasar los resultados a la vista
+        res.render('busqueda', {
+        nombrePagina : 'Resultados Búsqueda',
+        busCodigo, 
+        moment
+    })
     })
 
     router.post('/send-email', async (req, res) => {
