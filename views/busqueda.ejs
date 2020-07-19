@@ -3,9 +3,9 @@
         <div class="row">
             <div class="col">
                 <h1 class="text-center titulo my-5"><%= nombrePagina %></h1>
-                <% if (busCodigo.length > 0 ) { %>
+                <% if (producto.length > 0 ) { %>
                 <div class="col">
-                    <% busCodigo.forEach(codigo => { %>
+                    <% producto.forEach(codigo => { %>
                     <div class="alert alert-dismissible alert-success">
                         <button type="button" class="close" data-dismiss="alert">&times;</button>
                         <strong>Buenas Noticias!</strong> el codigo del producto que ha sido ingresado es 100% original.
