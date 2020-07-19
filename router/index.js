@@ -44,16 +44,9 @@ module.exports = function() {
     });
 
     router.get('/busqueda', async (req, res) => {
-        const {codigo} = req.query
+        const { codigo } = req.query
 
-        let query;
-    if(Codigo === ''){
-        query = 'el codigo no puede ir vacio';
-    } else {
-        query = `where : {
-            codigo : { [Op.eq] :  ${codigo}  },
-        }`
-    }
+
 
         const producto = await Codigo.findAll({
             where :  { 
