@@ -44,9 +44,9 @@ module.exports = function() {
     });
 
     router.get('/busqueda', async (req, res) => {
-        const codigo = req.query
+        const {codigo} = req.query
 
-        const busCodigo = await Codigo.findOne({
+        const busCodigo = await Codigo.findAll({
             where :  { 
                 codigo : { [Op.iLike] :  '%' + codigo + '%' }
             
