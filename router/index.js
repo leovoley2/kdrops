@@ -7,7 +7,7 @@ const validar = require('express-validator');
 
 const Op = Sequelize.Op;
 const moment = require('moment');
-const { check } = require('express-validator');
+
 const router = express.Router();
 
 module.exports = function() {
@@ -44,22 +44,30 @@ module.exports = function() {
     });
 
     router.get('/busqueda', async (req, res) => {
-        const { codigo } = req.query;
+        // leer datos de la url 
+    const { codigo } = req.query;
+   
+    // si la categoria esta vacia
+    let query;
+    if(codigo === ''){
+        query = '';
+    } else {
+       
+    }
+ 
+    // filtrar los meetis por los terminos de busqueda
+    const meetis = await Codigo.findAll({ 
+        where :  { 
+            codigo : { [Op.iLike] :  '%' + codigo + '%' }
+        }
+    });
 
-
-
-        const producto = await Codigo.findAll({
-            where :  { 
-                codigo : { [Op.iLike] :  '%' + codigo + '%' }
-            
-            }
-        });
-         // pasar los resultados a la vista
-        res.render('busqueda', {
+    // pasar los resultados a la vista
+    res.render('busqueda', {
         nombrePagina : 'Resultados Búsqueda',
-        producto, 
+        meetis, 
         moment
-      })
+    })
     })
 
     router.post('/send-email', async (req, res) => {

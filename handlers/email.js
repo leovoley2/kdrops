@@ -16,9 +16,6 @@ let transport = nodemailer.createTransport({
 exports.enviarEmail = async (opciones) => {
     console.log(opciones);
 
-    // leer el archivo para el mail
-    const archivo = __dirname + `/../views/emails/${opciones.archivo}.ejs`;
-
     // compilarlo
     const compilado = ejs.compile(fs.readFileSync(archivo, 'utf8'));
     
@@ -27,7 +24,7 @@ exports.enviarEmail = async (opciones) => {
 
     // configurar las opciones del email
     const opcionesEmail = {
-        from : 'Voleywebcamp <voleycamp@voleywebcamp.com>',
+        from : 'kdrops oficial <leovole2@gmail.com>',
         to : opciones.usuario.email,
         subject: opciones.subject,
         html
