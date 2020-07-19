@@ -46,7 +46,16 @@ module.exports = function() {
     router.get('/busqueda', async (req, res) => {
         const {codigo} = req.query
 
-        const busCodigo = await Codigo.findAll({
+        let query;
+    if(Codigo === ''){
+        query = 'el codigo no puede ir vacio';
+    } else {
+        query = `where : {
+            codigo : { [Op.eq] :  ${codigo}  },
+        }`
+    }
+
+        const producto = await Codigo.findAll({
             where :  { 
                 codigo : { [Op.iLike] :  '%' + codigo + '%' }
             
@@ -55,9 +64,9 @@ module.exports = function() {
          // pasar los resultados a la vista
         res.render('busqueda', {
         nombrePagina : 'Resultados Búsqueda',
-        busCodigo, 
+        producto, 
         moment
-    })
+      })
     })
 
     router.post('/send-email', async (req, res) => {
