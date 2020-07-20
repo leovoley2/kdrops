@@ -4,12 +4,12 @@ const db = require('../config/db');
 
 const Productos = db.define('producto', {
     id : {
-        type: Sequelize.INTEGER, 
+        type: Sequelize.STRING, 
         primaryKey: true,
         autoIncrement : true
     }, 
     codigo: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.TEXT,
         allowNull: false,
         validate : {
             notEmpty : {
