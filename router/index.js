@@ -49,9 +49,9 @@ module.exports = function() {
    
  
     // filtrar los meetis por los terminos de busqueda
-    const meetis = await Codigo.findOne({ 
+    const meetis = await Codigo.findAll({ 
         where :  { 
-            codigo : { [Op.eq] : ${codigo} }
+            codigo : { [Op.iLike] :  '%' + codigo + '%' }
         }
     });
 
