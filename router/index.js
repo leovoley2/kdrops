@@ -47,18 +47,11 @@ module.exports = function() {
         // leer datos de la url 
     const { codigo } = req.query;
    
-    // si la categoria esta vacia
-    let query;
-    if(codigo === ''){
-        query = '';
-    } else {
-       
-    }
  
     // filtrar los meetis por los terminos de busqueda
     const meetis = await Codigo.findOne({ 
         where :  { 
-            codigo : { [Op.iLike] :  '%' + codigo + '%' }
+            codigo : { [Op.eq] :  '%' + codigo + '%' }
         }
     });
 
