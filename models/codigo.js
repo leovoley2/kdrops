@@ -9,7 +9,7 @@ const Productos = db.define('producto', {
         autoIncrement : true
     }, 
     codigo: {
-        type: Sequelize.TEXT,
+        type: Sequelize.STRING,
         allowNull: false,
         validate : {
             notEmpty : {
