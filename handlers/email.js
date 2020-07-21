@@ -3,34 +3,38 @@ const emailConfig = require('../config/email');
 const fs = require('fs');
 const util = require('util');
 const ejs = require('ejs');
+const SMTPTransport = require('nodemailer/lib/smtp-transport');
 
-let transport = nodemailer.createTransport({
-    host : emailConfig.host,
-    port : emailConfig.port, 
+let transport = nodemailer.createTransport("SMTP",{
+    service: "Gmail",
     auth: {
-        user: emailConfig.user, 
-        pass: emailConfig.pass
+        user: 'leovoley2@gmail.com',
+    pass: 'Italia_15' 
     }
 });
 
-exports.enviarEmail = async (opciones) => {
-    console.log(opciones);
+exports.enviarEmail = function (res, req) {
 
     // compilarlo
     const compilado = ejs.compile(fs.readFileSync(archivo, 'utf8'));
     
-    // crear el HTML
-    const html = compilado({ url : opciones.url });
-
     // configurar las opciones del email
     const opcionesEmail = {
         from : 'kdrops oficial <leovole2@gmail.com>',
-        to : opciones.usuario.email,
-        subject: opciones.subject,
-        html
+        to : req.body.email,
+        subject: req.body.name,
+        phone: req.body.phone,
+        message: req.body.message
     }
 
     // enviar el mail
-    const sendEmail = util.promisify(transport.sendMail, transport);
-    return sendEmail.call(transport, opcionesEmail);
+ SMTPTransport.sendMail(mailOptions, function(error, response){
+     if(error){
+         console.log(error);
+         res.render('errorMensaje');
+     }else{
+        console.log("Message sent"); 
+        res.render('enviado');
+     }
+ })
 }
