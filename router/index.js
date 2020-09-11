@@ -7,7 +7,7 @@ const validar = require('express-validator');
 const fs = require('fs');
 const util = require('util');
 const ejs = require('ejs');
-
+const SMTPTransport = require('nodemailer/lib/smtp-transport');
 
 const Op = Sequelize.Op;
 const moment = require('moment');
