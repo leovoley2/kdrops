@@ -4,11 +4,10 @@ const nodemailer = require('nodemailer');
 const Sequelize = require('sequelize');
 const Codigo = require('../models/codigo');
 const validar = require('express-validator');
-const nodemailer = require('nodemailer');
 const fs = require('fs');
 const util = require('util');
 const ejs = require('ejs');
-const SMTPTransport = require('nodemailer/lib/smtp-transport');
+
 
 const Op = Sequelize.Op;
 const moment = require('moment');
