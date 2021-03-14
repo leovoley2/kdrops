@@ -22,6 +22,10 @@ module.exports = function() {
     router.get('/biotin', (req, res) => {
         res.render('biotin')
     });
+    
+     router.get('/promociones', (req, res) => {
+        res.render('promociones')
+    });
 
     router.get('/breast', (req, res) => {
         res.render('breast')
