@@ -3,7 +3,7 @@ const expressLayouts = require('express-ejs-layouts');
 const path = require('path');
 const bodyParser = require('body-parser');
 const flash = require('connect-flash');
-const session = require('express-session');
+const session = require('cookie-session');
 const cookieParser = require('cookie-parser');
 const routes = require('./router/index');
 
