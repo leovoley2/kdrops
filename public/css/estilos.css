@@ -739,8 +739,8 @@ background-attachment: fixed;
 /* ------------------------------------------------BOTON DE WHAP----------------------- */
 .btn-whap{
     position: fixed;
-    width: 55px;
-    height: 55px;
+    width: 65px;
+    height: 65px;
     line-height: 55px;
     bottom: 30px;
     right: 30px;
@@ -748,7 +748,7 @@ background-attachment: fixed;
     color: #fff;
     border-radius: 50px;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
     z-index: 100;
 }
@@ -764,9 +764,9 @@ background-attachment: fixed;
 
     .btn-whap{
         right: 70px;
-        width: 45px;
-    height: 45px;
-    font-size: 30px;
+        width: 55px;
+    height: 55px;
+    font-size: 40px;
     text-align: center;
     }
 }
