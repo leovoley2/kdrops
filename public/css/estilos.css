@@ -794,3 +794,8 @@ background-attachment: fixed;
         padding-left: 2rem;
     }
 }
+
+.buscar{
+    padding-left: 5rem;
+    text-decoration: none;
+}
