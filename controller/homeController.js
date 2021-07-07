@@ -41,3 +41,7 @@ exports.promociones =  (req, res) => {
 exports.preguntas =  (req, res) => {
     res.render('preguntas')
 }
+
+exports.prueba =  (req, res) => {
+    res.render('prueba')
+}

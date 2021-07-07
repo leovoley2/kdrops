@@ -18,6 +18,7 @@ module.exports = function() {
     router.get('/nosotros', homeController.nosotros);
     router.get('/promociones', homeController.promociones);
     router.get('/preguntas', homeController.preguntas);
+    router.get('/prueba', homeController.prueba);
 
    
 

@@ -11,7 +11,7 @@ body{
     
 }
 
-/*Menu  */
+/*Menu 
 header nav{
     height: 70px;
     background-color: black;
@@ -19,6 +19,34 @@ header nav{
     justify-content:space-between;
     padding-right: 30px;
 }
+ */
+.navbar{
+    background: #000!important;
+    
+}
+
+.navbar .nav-item{
+    text-align: center;
+
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+.nav-link{
+     border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    padding: 4px 0;
+    transition: 0.7s ease-out;
+    color: #fff;
+    text-decoration: none;
+}
+.nav-link:hover{
+    border-top: 1px solid coral;
+    border-bottom: 1px solid coral;
+    transition: 0.7s ease-out;
+}
+
 
 .icono{
     display: none;
@@ -63,7 +91,7 @@ nav .logo img{
         color: rgb(133, 120, 120);
         background: transparent;
         padding: 20px;
-        z-index: 100%;
+        z-index: 100;
         cursor: pointer;
         margin-right: 40px;
     }
@@ -81,7 +109,7 @@ z-index: 2;
 
     }
     .icono:hover{
-        color: #0062be;
+        color: #fff;
     }
 
     .uno{
@@ -93,15 +121,6 @@ z-index: 2;
     }
 }
 
-@media screen and (max-width:400px) {
-     nav .logo{
-        margin-left: 20px;
-    }
-    .icono{
-        margin-right: 20px;
-    }
-
-}
 
 /* grid animado */
 .grid{
@@ -146,7 +165,7 @@ z-index: 2;
 
 .grid_title{
     font-size: 5rem;
-    color: blue;
+    color: chartreuse;
 }
 
 .grid_title--trasform{
@@ -169,7 +188,7 @@ z-index: 2;
 
 @media screen and (max-width:750px){
     .grid::before{
-        max-width:700px;
+        max-width:600px;
         background-size: cover;
         grid-column: 1/-1;
          grid-row: 1/-1;
@@ -177,6 +196,12 @@ z-index: 2;
 
     
     }
+    .grid_title{
+        font-size: 2rem;
+        color:chartreuse;
+    }
+
+    
 }
 
 /*-----------------------------------Promciones-iconos-----------------------------------*/
@@ -472,7 +497,8 @@ background: linear-gradient(to right, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, F
     justify-content:flex-end;
 }
 .content .imgBox img{
-    max-width: 260px;
+    max-width: 300px;
+    max-height: 600px;
 }
 .thumb{
     position: absolute;
@@ -558,21 +584,22 @@ background: linear-gradient(to right, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, F
         justify-content: center;
     }
     .content .imgBox img{
-        max-width: 250px;
-        padding-bottom: 20px;
+        max-width: 200px;
+        padding-bottom: 60px;
     }
 
     .thumb li img{
-        max-width: 35px;
+        max-width: 30px;
+        margin-right: 3px;
     }
     .thumb li a{
         color: #000;
-        font-size: 8px;
-        margin-right: 5px;
+        font-size: 6px;
         
     }
     .circulo{
         clip-path: circle(400px at center bottom);
+
     }
 
 }
@@ -795,7 +822,3 @@ background-attachment: fixed;
     }
 }
 
-.buscar{
-    padding-left: 5rem;
-    text-decoration: none;
-}
