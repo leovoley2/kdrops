@@ -739,9 +739,9 @@ background-attachment: fixed;
 /* ------------------------------------------------BOTON DE WHAP----------------------- */
 .btn-whap{
     position: fixed;
-    width: 65px;
-    height: 65px;
-    line-height: 55px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
     bottom: 30px;
     right: 30px;
     background:green;
@@ -763,11 +763,13 @@ background-attachment: fixed;
 @media screen and (max-width:760px){
 
     .btn-whap{
-        right: 70px;
-        width: 55px;
-    height: 55px;
-    font-size: 40px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        bottom: 40px;
+        right: 30px;
     text-align: center;
+
     }
 }
 
