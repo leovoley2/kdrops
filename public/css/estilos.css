@@ -721,6 +721,16 @@ background-attachment: fixed;
 
     
   }
+
+  .panama:nth-child(8){
+      background-color: #fff;
+      background-image: linear-gradient(90deg, #fff 0%, #0b1ff5c7 46%, #f71707b7 100%), url(../img/luis-gonzalez-Wiwqd_8Rds8-unsplash.jpg);
+      height: 40em;
+      width: 100%;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+  }
   .ico-promo{
     height: 4em;
     width: 4em;
@@ -729,6 +739,12 @@ background-attachment: fixed;
     animation:heartBeat; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 5s; 
     animation-iteration-count: infinite;
+  }
+
+  .ico-promo-panama{
+    height: 4em;
+    width: 4em;
+    text-decoration: none;
   }
 
   .lt1{
