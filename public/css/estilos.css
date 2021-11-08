@@ -722,7 +722,7 @@ background-attachment: fixed;
     
   }
 
-  .panama:nth-child(8){
+.panama:nth-child(8){
     background-color: #1b53ec;
 background-image: linear-gradient(180deg, #ffffffcc 0%, #0b1ff5c7 46%, #f71707b7 100%), url(../img/luis-gonzalez-Wiwqd_8Rds8-unsplash.jpg);
 height: 40em;
