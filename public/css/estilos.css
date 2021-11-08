@@ -722,7 +722,7 @@ background-attachment: fixed;
     
   }
 
-  .ecuador:nth-child(8){
+  .panama:nth-child(8){
     background-color: #092f99;
 background-image: linear-gradient(180deg, #ffffffcc 0%, #0b1ff5c7 46%, #f71707b7 100%), url(../img/panama.jpg);
 height: 40em;
