@@ -438,10 +438,7 @@ background: linear-gradient(to right, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, F
 
 /*---------------------------------Noticia------------------------------*/
 
-.noticia{
-    background-image: url(../img/noticia.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+.noticia{    
     background-position: center;
     width: auto;
 
