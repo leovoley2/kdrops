@@ -446,8 +446,9 @@ width: 100%;
 /*---------------------------preguntas frecuentes----------------------*/
 
 .manos img{
-    height: auto;
+    height: 100%;
     width: 100%;
+    margin-bottom: 0;
 }
 
 
