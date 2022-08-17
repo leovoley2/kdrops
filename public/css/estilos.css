@@ -425,7 +425,7 @@ background: linear-gradient(to right, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, F
         text-align: center;
         border-radius: 16px;
         margin-bottom: 3px;
-        color: #000;
+        color: white;
     }
 }
 
@@ -797,6 +797,7 @@ background-attachment: fixed;
         bottom: 40px;
         right: 30px;
     text-align: center;
+    z-index: 100;
 
     }
 }
