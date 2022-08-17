@@ -459,8 +459,7 @@ background: linear-gradient(to right, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, F
     /*background-image: linear-gradient( 109.6deg,  rgba(255,179,71,1) 11.2%, rgba(255,155,57,1) 91.1% );*/
     background-image: url(../img/cierre.png);
     background-size: cover;
-    background-position: left center;
-    width: auto;
+    width: 1250px;
 }
 
 /*---------------------------footer------------------------*/
