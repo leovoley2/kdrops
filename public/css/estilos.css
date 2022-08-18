@@ -382,7 +382,6 @@ background: linear-gradient(to right, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, F
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    overflow: hidden;
 
 }
 
@@ -426,7 +425,7 @@ background: linear-gradient(to right, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, F
         text-align: center;
         border-radius: 16px;
         margin-bottom: 3px;
-        color: white;
+        color: #000;
     }
 }
 
@@ -437,29 +436,15 @@ background: linear-gradient(to right, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, F
 }
 
 
-/*---------------------------------Noticia------------------------------*/
-
-.noticia img{    
-    
-width: 100%;
-}
-
 /*---------------------------preguntas frecuentes----------------------*/
 
 .manos img{
-    height: 100%;
+    height: auto;
     width: 100%;
-    margin-bottom: 0;
-    z-index: -10;
-    overflow: hidden;
 }
 
-
 .preguntas{
-    /*background-image: linear-gradient( 109.6deg,  rgba(255,179,71,1) 11.2%, rgba(255,155,57,1) 91.1% );*/
-    background-image: url(../img/fondo.png);
-    background-size: cover;
-    z-index:-99 ;
+    background-image: linear-gradient( 109.6deg,  rgba(255,179,71,1) 11.2%, rgba(255,155,57,1) 91.1% );
 }
 
 /*---------------------------footer------------------------*/
@@ -799,7 +784,6 @@ background-attachment: fixed;
         bottom: 40px;
         right: 30px;
     text-align: center;
-    z-index: 100;
 
     }
 }
