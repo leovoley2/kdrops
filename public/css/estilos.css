@@ -127,6 +127,7 @@ z-index: 2;
 .publicidad{
     background-image: url(../img/fondo.png);
     background-size: cover;
+    background-repeat: no-repeat;
 
 }
 
