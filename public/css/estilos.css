@@ -130,6 +130,11 @@ z-index: 2;
     background-repeat: no-repeat;
 
 }
+.publicidad img{
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
 
 .grid{
     background: #fff;
