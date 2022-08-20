@@ -124,29 +124,25 @@ z-index: 2;
 
 /* grid animado */
 
-@-webkit-keyframes zoom {
-    from {
-      -webkit-transform: scale(1, 1);
-    }
-    to {
-      -webkit-transform: scale(1.5, 1.5);
-    }
-  }
-  
-  @keyframes zoom {
-    from {
-      transform: scale(1, 1);
-    }
-    to {
-      transform: scale(1.5, 1.5);
-    }
-  }
-  
-  .carousel-inner .item > img {
-    -webkit-animation: zoom 20s;
-    animation: zoom 20s;
-  }
+#cusCarusel .carousel-inner .item img{
+    height: 100vh;
+    width: 100%;
 
+}
+
+.carousel-inner .item > img{
+    -webkit-animation:thing 20s ;
+    -o-animation:thing 20s ;
+    animation:thing 20s ;
+}
+@keyframes thing {
+    from{
+        transform: scale(1.1);
+    }
+    to{
+        transform: scale(1.5, 1.5);
+    }
+}
 .grid{
     background: #fff;
     height:90vh;
