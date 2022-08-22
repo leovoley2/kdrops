@@ -459,12 +459,16 @@ background: linear-gradient(to right, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, F
 /*---------------------------preguntas frecuentes----------------------*/
 
 .manos img{
-    height: auto;
-    width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
 }
 
 .preguntas{
-    background-image: linear-gradient( 109.6deg,  rgba(255,179,71,1) 11.2%, rgba(255,155,57,1) 91.1% );
+   background-image: url(../img/fondo.png);
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 /*---------------------------footer------------------------*/
