@@ -358,6 +358,12 @@ background: linear-gradient(to right, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, F
 
 }
 
+.codigo2{
+    background-image: url(../img/disAut.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .codigo h2{
     display: flex;
     justify-content:center;
