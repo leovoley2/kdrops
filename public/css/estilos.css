@@ -877,6 +877,8 @@ background-attachment: fixed;
 
 .informacion{
     background-image: url(../img/fondo.png);
-    max-width: 1366px ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%; ;
     height: 300px;
 }
