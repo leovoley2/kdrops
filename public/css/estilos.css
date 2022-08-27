@@ -772,6 +772,7 @@ background-attachment: fixed;
     animation:heartBeat; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 5s; 
     animation-iteration-count: infinite;
+    margin-left: 4px;
   }
 
   .ico-promo-panama{
@@ -780,10 +781,7 @@ background-attachment: fixed;
     text-decoration: none;
   }
 
-  .lt1{
-    margin-left: 7em;
-    margin-top: 6em;;
-}
+
 
 @media screen and (max-width:760px){
     
