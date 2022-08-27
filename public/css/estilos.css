@@ -484,6 +484,10 @@ background: linear-gradient(to right, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, F
 
 /*--------------------------pagina de productos1-------------*/
 
+.banderas > a > img{
+    width: 30px;
+    margin-left: 4px;
+}
 .sec{
     position: relative;
     width: 100%;
