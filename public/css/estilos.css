@@ -684,8 +684,8 @@ background-attachment: fixed;
     
   }
   .colombia:nth-child(2){
-    background-color: #ffe2069c;
-    background-image: linear-gradient(90deg, #ffe2069c 0%, #352bc19c 46%, #f50e2998 100%),url(../img/colombia.jpg);    
+    background-color: #3f25d39d;
+background-image: linear-gradient(90deg, #90a188a9 0%, #2314f4b0 46%, #d0a0a5a9 100%),url(../img/colombia.jpg);    
 height: 46em;
 width: 100%;
 background-attachment: fixed;
@@ -696,8 +696,8 @@ background-attachment: fixed;
   }
 
   .usa:nth-child(3){
-    background-color: #ee0b1aa1;
-    background-image: linear-gradient(90deg, #ee0b1a9a 1%, #ffffffa1 50%, #232a5e9a 87%), url(../img/usa.jpg);     
+    background-color: #3f25d39d;
+background-image: linear-gradient(90deg, #90a188a9 0%, #2314f4b0 46%, #d0a0a5a9 100%), url(../img/usa.jpg);     
 height: 46em;
 width: 100%;
 background-attachment: fixed;
@@ -708,8 +708,8 @@ background-attachment: fixed;
   }
 
   .peru:nth-child(4){
-    background-color: #ee0b1aa1;
-    background-image: linear-gradient(90deg, #ee0b1a9a 1%, #ffffffa1 50%, #eb0e0e9a 87%), url(../img/peru.jpg);     
+    background-color: #3f25d39d;
+    background-image: linear-gradient(90deg, #90a188a9 0%, #2314f4b0 46%, #d0a0a5a9 100%), url(../img/peru.jpg);     
 height: 46em;
 width: 100%;
 background-attachment: fixed;
@@ -720,8 +720,8 @@ background-attachment: fixed;
   }
 
   .españa:nth-child(5){
-    background-color: #ee0b1aa1;
-    background-image: linear-gradient(90deg, #ee0b1a9a 1%, #faea04a1 50%, #eb0e0e9a 87%), url(../img/españa.jpg);     
+    background-color: #3f25d39d;
+background-image: linear-gradient(90deg, #90a188a9 0%, #2314f4b0 46%, #d0a0a5a9 100%), url(../img/españa.jpg);     
 height: 46em;
 width: 100%;
 background-attachment: fixed;
@@ -732,8 +732,8 @@ background-attachment: fixed;
   }
 
   .chile:nth-child(6){
-    background-color: #ee0b1aa1;
-    background-image: linear-gradient(90deg, #ee0b1a9a 1%, #ffffffa1 50%, #eb0e0e9a 87%), url(../img/chile.jpg);     
+    background-color: #3f25d39d;
+background-image: linear-gradient(90deg, #90a188a9 0%, #2314f4b0 46%, #d0a0a5a9 100%), url(../img/chile.jpg);     
 height: 40em;
 width: 100%;
 background-attachment: fixed;
@@ -744,8 +744,8 @@ background-attachment: fixed;
   }
 
   .ecuador:nth-child(7){
-    background-color: #f5ee0b;
-background-image: linear-gradient(180deg, #f5ed0bcc 0%, #0b1ff5c7 46%, #f71707b7 100%), url(../img/ecuador.jpg);
+    background-color: #3f25d39d;
+background-image: linear-gradient(90deg, #90a188a9 0%, #2314f4b0 46%, #d0a0a5a9 100%), url(../img/ecuador.jpg);
 height: 40em;
 width: 100%;
 background-attachment: fixed;
@@ -756,8 +756,8 @@ background-attachment: fixed;
   }
 
   .panama:nth-child(8){
-      background-color: #fff;
-      background-image: linear-gradient(90deg, #fff 0%, #0b1ff5c7 46%, #f71707b7 100%), url(../img/luis-gonzalez-Wiwqd_8Rds8-unsplash.jpg);
+    background-color: #3f25d39d;
+    background-image: linear-gradient(90deg, #90a188a9 0%, #2314f4b0 46%, #d0a0a5a9 100%), url(../img/luis-gonzalez-Wiwqd_8Rds8-unsplash.jpg);
       height: 40em;
       width: 100%;
       background-attachment: fixed;
