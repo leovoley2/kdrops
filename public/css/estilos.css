@@ -674,7 +674,7 @@ background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3
 
 .mexico:nth-child(1){
     background-color: #32601b9d;
-background-image: linear-gradient(90deg, #32601ba9 0%, #fdfdfdb0 46%, #f02038a9 100%), url(../img/mexico.jpg);
+background-image: linear-gradient(90deg, #32601ba9 0%, #2314f4b0 46%, #f02038a9 100%), url(../img/mexico.jpg);
 height: 46em;
 width: 100%;
 background-attachment: fixed;
@@ -772,7 +772,7 @@ background-attachment: fixed;
     animation:heartBeat; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 5s; 
     animation-iteration-count: infinite;
-    margin-left: 4px;
+    
   }
 
   .ico-promo-panama{
