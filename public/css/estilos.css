@@ -780,6 +780,10 @@ background-attachment: fixed;
     margin-left: 7em;
     margin-top: 6em;;
 }
+
+@media screen and (max-width:760px){
+    
+}
 /* ------------------------------------------------BOTON DE WHAP----------------------- */
 .btn-whap{
     position: fixed;
@@ -868,3 +872,11 @@ background-attachment: fixed;
     }
 }
 
+/*--------------------------seccion de publicidad Nueva--------------------------------
+*/
+
+.informacion{
+    background-image: url(../img/fondo.png);
+    max-width: 1366px ;
+    height: 300px;
+}
