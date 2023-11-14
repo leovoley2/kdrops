@@ -774,16 +774,7 @@ background-attachment: fixed;
     animation-iteration-count: infinite;
     
   }
-  .ico-promo2{
-    height: 3em;
-    width: 3em;
-    text-decoration: none;
-    color: #000;
-    animation:heartBeat; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 5s; 
-    animation-iteration-count: infinite;
-    
-  }
+  
 
   .ico-promo-panama{
     height: 3em;
